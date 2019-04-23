@@ -15,7 +15,10 @@ $oUsr=new Usuario($usuario, "", $clave);
 if($oUsr->Valida()){
     echo "PERFECTO ".$oUsr->getNombre();
     $_SESSION["Usuario"]=$oUsr;
+    
     echo "<a href=".URLBASE."CambiarClave.php />Cambiar Clave</a>";
+    
+    echo "<a href=".URLBASE."cerrarSesion.php />Cerrar Sesoin</a>";
 }
 else{
     echo "ERROR de las CREDENCIALES";

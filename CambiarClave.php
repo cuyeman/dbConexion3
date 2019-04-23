@@ -14,10 +14,13 @@ and open the template in the editor.
     </head>
     <body>
         <form method="POST" action="<?=URLBASE?>controladores/AccUsuarioCambiarClave.php">
-            <input type="password" name="clave0">
-            <input type="password" name="clave1">
-            <input type="password" name="clave2">
-            <input type="submit" name="enviar" value="Acceder">
+            Password<input type="password" name="clave0">
+            <br>
+            Password nueva<input type="password" name="clave1">
+            <br>
+            Repita nueva password<input type="password" name="clave2">
+            <br>
+            Aceptar<input type="submit" name="enviar" value="Acceder">
         </form>
     </body>
 </html>
